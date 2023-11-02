@@ -32,12 +32,12 @@ const UserProfile = () => {
               id.classList.toggle("ri-close-line");
             }}
             id="menu"
-            className="ri-menu-line cursor-pointer hidden sm:block"
+            className="ri-menu-line cursor-pointer"
           ></i>
         </div>
         <div
           style={{ display: `${display}` }}
-          className="navSide w-[15vw] text-center shadow-2xl py-[5vh] absolute top-[10vh] right-0 text-slate-700"
+          className="navSide bg-white  z-50 w-[30vw] sm:w-[15vw] text-center shadow-2xl py-[5vh] absolute top-[10vh] right-0 text-slate-700"
         >
           <div className="border-slate-300 py-[2vh] border-b-2 mb-[3vh]">
             <p
@@ -48,19 +48,19 @@ const UserProfile = () => {
             >
               Terms And Condition
             </p>
-            <p
+            {/* <p
               onClick={() => {
                 navigate(`/user/${id}/contact-us`);
               }}
             >
               Contact Us
-            </p>
+            </p> */}
           </div>
 
           <p
             className=" cursor-pointer"
             onClick={() => {
-              console.log("log out user");
+              // console.log("log out user");
               dispatch(asyncLogOutUser());
             }}
           >

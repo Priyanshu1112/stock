@@ -10,8 +10,9 @@ import { asyncGetCurrent } from "./store/actions/appActions";
 import DeleteUsers from "./components/profile/admin/DeleteUsers";
 import EditProfile from "./components/profile/admin/EditProfile";
 import ChangePassword from "./components/profile/admin/ChangePassword";
-import TermsAndCondition from "./components/profile/TermsAndCondition";
 import ContactUs from "./components/profile/ContactUs";
+import TermsAndConditionUser from "./components/profile/user/TermsAndConditionUser";
+import TermsAndConditionAdmin from "./components/profile/admin/TermsAndConditionAdmin";
 
 function App() {
   const dispatch = useDispatch();
@@ -49,13 +50,13 @@ function App() {
         <Route path="/user/:id" element={<UserProfile />} />
         <Route
           path="/user/:id/terms-and-conditions"
-          element={<TermsAndCondition />}
+          element={<TermsAndConditionUser />}
         />
         <Route path="/user/:id/contact-us" element={<ContactUs />} />
         <Route path="/admin/:id" element={<AdminProfile />} />
         <Route
           path="/admin/:id/terms-and-conditions"
-          element={<TermsAndCondition />}
+          element={<TermsAndConditionAdmin />}
         />
         <Route path="/admin/:id/contact-us" element={<ContactUs />} />
         <Route path="/admin/:id/delete-users" element={<DeleteUsers />} />

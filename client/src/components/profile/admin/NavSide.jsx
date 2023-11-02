@@ -86,13 +86,13 @@ const NavSide = ({ displaySideNav, setDisplaySideNav }) => {
           >
             Terms And Condition
           </p>
-          <p
+          {/* <p
             onClick={() => {
               navigate(`/admin/${id}/contact-us`);
             }}
           >
             Contact Us
-          </p>
+          </p> */}
         </div>
 
         <p
