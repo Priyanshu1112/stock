@@ -42,12 +42,13 @@ const AddUser = ({ display, setDisplay }) => {
       return;
     }
     if (formData.balance === "") {
-      console.log("empty balance");
+      console.log("Empty balance before update:", formData.balance);
       const name = "balance";
       setFormData({
         ...formData,
         [name]: 0,
       });
+      console.log("Updated balance:", formData.balance);
     }
     if (formData.password === "") {
       setError({ password: "Password is required" });

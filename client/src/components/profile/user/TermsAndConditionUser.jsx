@@ -61,7 +61,7 @@ const TermsAndConditionUser = () => {
         </div>
         <div
           style={{ display: `${display}` }}
-          className="navSide z-50 w-[30vw] sm:w-[15vw] text-center shadow-2xl py-[5vh] absolute top-[10vh] right-0 text-slate-700"
+          className="navSide bg-white z-50 w-[30vw] sm:w-[15vw] text-center shadow-2xl py-[5vh] absolute top-[10vh] right-0 text-slate-700"
         >
           <div className="border-slate-300 py-[2vh] border-b-2 mb-[3vh]">
             <p

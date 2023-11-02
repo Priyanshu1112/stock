@@ -64,7 +64,7 @@ const EditProfile = () => {
       .then((status) => {
         if (status == 200) {
           toast.update(toastId, {
-            render: "Admin added successfully",
+            render: "Admin updated successfully",
             type: "success",
             autoClose: 3000,
           });
